@@ -2,7 +2,6 @@ const XLSX = require("xlsx")
 const path = require("path")
 const Afip = require("ts-afip-ws")
 const verificadorCuit = require('verificar-cuit-ar')
-const utf8 = require('utf8')
 
 const getDataSheet = () => {
     const file = path.join(__dirname, "Files", "Input", "original.xlsx")
@@ -60,7 +59,6 @@ const principal = async () => {
                     razSocial = dataAfip.datosGenerales.razonSocial
                 }
                 let direccion = dataAfip.datosGenerales.domicilioFiscal.direccion + ", " + dataAfip.datosGenerales.domicilioFiscal.localidad + ", " + dataAfip.datosGenerales.domicilioFiscal.descripcionProvincia
-                direccion = utf8.encode(direccion)
                 const datosMonotributo = dataAfip.datosMonotributo
                 const datosRegGral = dataAfip.datosRegimenGeneral
                 if (datosMonotributo === undefined) {

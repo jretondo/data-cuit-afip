@@ -16,8 +16,6 @@
   "license": "MIT",
   "dependencies": {
     "ts-afip-ws": "^1.2.6",
-    "unicode-encode": "^1.4.2",
-    "utf8": "^3.0.0",
     "verificar-cuit-ar": "^1.0.0",
     "xlsx": "^0.18.5"
   }
