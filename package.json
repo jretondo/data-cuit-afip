@@ -1,0 +1,24 @@
+{
+  "name": "data-cuit-afip",
+  "version": "1.0.0",
+  "description": "aplicacion que modifica un excel con informacion impositiva de cada cuit que se encuentre en el excle original",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "afip",
+    "cuit",
+    "data",
+    "ws"
+  ],
+  "author": "Retondo Javier Edgardo",
+  "license": "MIT",
+  "dependencies": {
+    "ts-afip-ws": "^1.2.6",
+    "unicode-encode": "^1.4.2",
+    "utf8": "^3.0.0",
+    "verificar-cuit-ar": "^1.0.0",
+    "xlsx": "^0.18.5"
+  }
+}
